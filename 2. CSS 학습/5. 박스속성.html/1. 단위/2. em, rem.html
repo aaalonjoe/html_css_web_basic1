@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* em은 부모의 배수, rem은 html 기본값(16px)의 배수 */
+        html {
+            /* html 기본값 */
+            font-size: 16px;
+        }
+        body {
+            font-size: 20px;
+        }
+        div {
+            border: 2px solid gray;
+        }
+        .root {
+            /* 10 x 16 = 160px */
+            width: 10em;
+            /* 16 x 1.5 = 24px */
+            font-size: 1.5em;
+        }
+        .parent {
+            
+        }
+        .child {
+            font-size: 2em;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="root">Root
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+
+</body>
+</html>
