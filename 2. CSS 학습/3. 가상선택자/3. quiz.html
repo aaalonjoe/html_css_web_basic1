@@ -7,25 +7,25 @@
     <title>Document</title>
 
     <style>
-        #list>li:nth-child(2n+1) {
+        #wrap>#list>li:nth-child(2n+1) {
             background: yellow;
         }
-        #list>li:nth-child(2n) {
+        #wrap>#list>li:nth-child(2n) {
             background: gray;
         }
-        #list>li:first-child {
+        #wrap>#list>li:first-child {
             color: red;
         }
-        #list>li:last-child {
+        #wrap>#list>li:last-child {
             color: green;
         }
-        #list>li:nth-child(2) {
+        #wrap>#list>li:nth-child(2) {
             font-style: italic;
         }
-        #list>li.a {
+        #wrap>#list>li.a {
             border: 2px dotted aqua;
         }
-        #list>li.b {
+        #wrap>#list>li:nth-child(n+3) {
             border: 2px dashed violet;
         }
     </style>
@@ -38,11 +38,11 @@
         <ul id="list">
             <li class="a">리스트1</li>
             <li class="a">리스트2</li>
-            <li class="b">리스트3</li>
-            <li class="b">리스트4</li>
-            <li class="b">리스트5</li>
-            <li class="b">리스트6</li>
-            <li class="b">리스트7</li>
+            <li>리스트3</li>
+            <li>리스트4</li>
+            <li>리스트5</li>
+            <li>리스트6</li>
+            <li>리스트7</li>
         </ul>
     </div>
 
