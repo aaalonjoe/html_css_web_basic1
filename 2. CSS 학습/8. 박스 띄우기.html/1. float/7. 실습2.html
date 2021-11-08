@@ -9,20 +9,78 @@
     <style>
 
 
-        li{
-           list-style: none;
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
         }
+
         .container {
-            width: 80%;
+            margin: 20px auto 0;
             background: lightgray;
-            margin: 0 auto;
-            border: 1px solid #000;
+            padding: 20px;
+            width: 800px;
+            border: 1px double #000;
+            box-sizing: border-box;
         }
-        h1 {
+        .container h1 {
             text-align: center;
+            padding-bottom: 20px;
+            font-family: cursive;
         }
-        h2 {
-            font-size: 15px;
+        .container h2 {
+            font-size: 1.1em;
+            font-weight: normal;
+            text-align: center;
+            line-height: 1.8;
+            background: rgb(65, 56, 46);
+            color: white;
+        }
+        .container h2 span.yellow {
+            color: yellow;
+        }
+        .container .gallery li {
+            width: 23.75%;
+            float: left;
+            background: gray;
+            text-align: justify;
+
+            margin-right: 1%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .container .gallery li:first-child {
+            margin-left: 1%;
+        }
+        .container .gallery {
+            background: gray;
+        }
+        .container .gallery #tulip {
+            background: red;
+            
+            
+        }
+        .container .gallery #jebi {
+            background: rgb(197, 121, 197);
+            
+        }
+        .container .gallery #hobak {
+            background: orange;
+            
+        }
+        .container .gallery #sunflower {
+            background: yellow;
+           
+        }
+        .container .gallery p {
+            padding: 10px;
+            line-height: 1.2;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
         }
 
     </style>
@@ -32,8 +90,8 @@
     
     <div class="container">
         <h1>나의 아름다운 정원</h1>
-        <h2 class="intro">사람들은 아마 자신에게 <span class="yellow">자신감을 북돋워 주는</span>표정 있는 꽃들을 선호할 것이다.</h2>
-        <ul class="gallery">
+        <h2 class="intro">사람들은 아마 자신에게 <span class="yellow">자신감을 북돋워 주는</span> 표정 있는 꽃들을 선호할 것이다.</h2>
+        <ul class="gallery clearfix">
             <li id="tulip">
                 <div class="img-box"></div>
                 <p>
@@ -41,7 +99,7 @@
                     붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.    
                 </p>
             </li>
-            <li class="jebi">
+            <li id="jebi">
                 <div class="img-box"></div>
                 <p>
                     드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
